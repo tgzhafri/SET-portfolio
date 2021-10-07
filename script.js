@@ -32,31 +32,31 @@ var sliderHolder = document.getElementById("slider-holder");
 var sliderList = [
   {
     title: "Tengku Zhafri",
-    img: "cropimages/self2.jpg",
+    img: "images/self2.jpeg",
     subTitle: "Software Engineer",
     description: "long text",
   },
   {
     title: "Design Engineer",
-    img: "cropimages/river.png",
+    img: "images/river.jpeg",
     subTitle: "River Care Associates",
     description: "long text",
   },
   {
     title: "Field Engineer",
-    img: "cropimages/shell.jpg",
+    img: "images/shell.jpeg",
     subTitle: "Meinhardt EPCM Malaysia",
     description: "long text",
   },
   {
     title: "Civil Engineer",
-    img: "cropimages/dialog2.png",
+    img: "images/dialog2.jpeg",
     subTitle: "Dialog Group Berhad",
     description: "long text",
   },
   {
     title: "Project Engineer",
-    img: "cropimages/dialog.jpg",
+    img: "images/dialog.jpeg",
     subTitle: "Dialog Group Berhad",
     description: "long text",
   },
