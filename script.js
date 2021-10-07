@@ -1,9 +1,11 @@
-// typewriter banner starts here
+
 window.onload = function () {
   window.scrollTo(0, 0);
 }
 
+// typewriter banner starts here
 var bannerText = document.getElementById("banner-text");
+var bannerLine = document.getElementById("banner-line");
 var textPos = 0;
 
 var testText = "Hello, I'm Tengku Zhafri";
@@ -17,6 +19,7 @@ var numAni = setInterval(function () {
   if (textPos >= testText.length) {
     var num = testText.length;
     bannerText.style.textAlign = "center";
+    bannerLine.style.display = "none";
     // textPos = 0;
   } else {
     num += 1;
