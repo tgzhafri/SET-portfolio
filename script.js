@@ -19,7 +19,6 @@ var numAni = setInterval(function () {
   if (textPos >= testText.length) {
     var num = testText.length;
     bannerText.style.textAlign = "center";
-    bannerLine.style.display = "none";
     // textPos = 0;
   } else {
     num += 1;
