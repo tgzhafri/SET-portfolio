@@ -402,6 +402,11 @@ body {
   top: calc(30vh - 75px);
   display: block;
   font-size: 12px;
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+}
+.sliderContent:hover {
+  transform: scale(1.1);
 }
 .blankDiv {
   width: 25%;
@@ -416,6 +421,15 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+/* .sliderLogo {
+  width: 100px;
+  height: 100px;
+  z-index: inherit;
+} */
+.sliderImg:hover {
+  transform: scale(1.1);
 }
 .work-sec {
   height: auto;

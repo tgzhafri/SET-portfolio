@@ -34,31 +34,36 @@ var sliderList = [
     title: "Tengku Zhafri",
     img: "images/self2.jpeg",
     subTitle: "Software Engineer",
-    description: "long text",
   },
   {
     title: "Design Engineer",
     img: "images/river.jpeg",
     subTitle: "River Care Associates",
-    description: "long text",
+    // logo: "images/invoke-logo.png",
   },
   {
     title: "Field Engineer",
     img: "images/shell.jpeg",
     subTitle: "Meinhardt EPCM Malaysia",
-    description: "long text",
+    // logo: "images/invoke-logo.png",
   },
   {
     title: "Civil Engineer",
     img: "images/dialog2.jpeg",
     subTitle: "Dialog Group Berhad",
-    description: "long text",
+    // logo: "images/invoke-logo.png",
   },
   {
     title: "Project Engineer",
     img: "images/dialog.jpeg",
     subTitle: "Dialog Group Berhad",
-    description: "long text",
+    // logo: "images/invoke-logo.png",
+  },
+  {
+    title: "Commercial",
+    img: "images/invoke.jpeg",
+    subTitle: "Invoke",
+    // logo: "images/invoke-logo.png",
   },
 ];
 
@@ -70,10 +75,6 @@ for (var i = 0; i < sliderList.length; i++) {
 
   var blankDiv = document.createElement("div");
   blankDiv.classList.add("blankDiv");
-
-  // var sliderImg = document.createElement('div');
-  // sliderImg.classList.add('sliderImg');
-  // sliderImg.style.backgroundImage = sliderList[i].img;
 
   var sliderImg = document.createElement("img");
   sliderImg.classList.add("sliderImg");
@@ -88,8 +89,9 @@ for (var i = 0; i < sliderList.length; i++) {
   var sliderSubTitle = document.createElement("h5");
   sliderSubTitle.innerHTML = sliderList[i].subTitle;
 
-  // var sliderDesc = document.createElement('p');
-  // sliderDesc.innerHTML = sliderList[i].description;
+  // var sliderLogo = document.createElement("img");
+  // sliderLogo.classList.add("sliderLogo");
+  // sliderLogo.src = sliderList[i].logo;
 
   sliderHolder.appendChild(sliderEle);
   sliderEle.appendChild(sliderContent);
@@ -97,7 +99,7 @@ for (var i = 0; i < sliderList.length; i++) {
   sliderEle.appendChild(sliderImg);
   sliderContent.appendChild(sliderTitle);
   sliderContent.appendChild(sliderSubTitle);
-  // sliderContent.appendChild(sliderDesc);
+  // sliderContent.appendChild(sliderLogo);
 }
 
 var pos = 0;
