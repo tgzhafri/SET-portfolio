@@ -34,36 +34,37 @@ var sliderList = [
     title: "Tengku Zhafri",
     img: "images/self2.jpeg",
     subTitle: "Software Engineer",
+    logo: "images/tz-logo-noBg.png",
   },
   {
     title: "Design Engineer",
     img: "images/river.jpeg",
     subTitle: "River Care Associates",
-    // logo: "images/invoke-logo.png",
+    logo: "images/logo/rivercare-logo.png",
   },
   {
     title: "Field Engineer",
     img: "images/shell.jpeg",
     subTitle: "Meinhardt EPCM Malaysia",
-    // logo: "images/invoke-logo.png",
+    logo: "images/logo/meinhardt-logo.png", 
   },
   {
     title: "Civil Engineer",
     img: "images/dialog2.jpeg",
     subTitle: "Dialog Group Berhad",
-    // logo: "images/invoke-logo.png",
+    logo: "images/logo/dialog-logo.png",
   },
   {
     title: "Project Engineer",
     img: "images/dialog.jpeg",
     subTitle: "Dialog Group Berhad",
-    // logo: "images/invoke-logo.png",
+    logo: "images/logo/dialog-logo.png",
   },
   {
     title: "Commercial",
     img: "images/invoke.jpeg",
     subTitle: "Invoke",
-    // logo: "images/invoke-logo.png",
+    logo: "images/logo/invoke-logo.png",
   },
 ];
 
@@ -73,8 +74,8 @@ for (var i = 0; i < sliderList.length; i++) {
   var sliderEle = document.createElement("div");
   sliderEle.classList.add("slider");
 
-  var blankDiv = document.createElement("div");
-  blankDiv.classList.add("blankDiv");
+  // var blankDiv = document.createElement("div");
+  // blankDiv.classList.add("blankDiv");
 
   var sliderImg = document.createElement("img");
   sliderImg.classList.add("sliderImg");
@@ -89,17 +90,18 @@ for (var i = 0; i < sliderList.length; i++) {
   var sliderSubTitle = document.createElement("h5");
   sliderSubTitle.innerHTML = sliderList[i].subTitle;
 
-  // var sliderLogo = document.createElement("img");
-  // sliderLogo.classList.add("sliderLogo");
-  // sliderLogo.src = sliderList[i].logo;
+  var sliderLogo = document.createElement("img");
+  sliderLogo.classList.add("sliderLogo");
+  sliderLogo.src = sliderList[i].logo;
 
   sliderHolder.appendChild(sliderEle);
   sliderEle.appendChild(sliderContent);
-  sliderEle.appendChild(blankDiv);
+  // sliderEle.appendChild(blankDiv);
   sliderEle.appendChild(sliderImg);
+  sliderEle.appendChild(sliderLogo);
   sliderContent.appendChild(sliderTitle);
   sliderContent.appendChild(sliderSubTitle);
-  // sliderContent.appendChild(sliderLogo);
+
 }
 
 var pos = 0;
@@ -117,7 +119,7 @@ function moveSlider(posNum) {
   sliderHolder.style.transform = `translateX(${pos}vw)`;
 }
 
-sliderTimerId = setInterval(sliderTimer, 3000);
+sliderTimerId = setInterval(sliderTimer, 4000);
 
 function sliderTimer() {
   pos -= 100;
